@@ -1,0 +1,306 @@
+[
+  {
+    "id": 1,
+    "name": "Twix Milkshake",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/twix.png",
+    "badge": "Limited Stock"
+  },
+  {
+    "id": 2,
+    "name": "Berry Bomb",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/berrybomb.png",
+    "badge": "Limited Stock"
+  },
+  {
+    "id": 3,
+    "name": "Black Mamba",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/blackmamba.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 4,
+    "name": "Godfather OG",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/godfather.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 5,
+    "name": "Ice Rocks",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/icerocks.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 6,
+    "name": "Trixx",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/Trixx.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 7,
+    "name": "Knife Pack",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/knife.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 8,
+    "name": "Lemon Cherry Runtz",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/lemoncherryruntz.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 9,
+    "name": "Blue Gushers ",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/bluegushers.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 10,
+    "name": "Hubba Bubba sour blueberry",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/hubbabubba1.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 11,
+    "name": "Lemon Haze",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/lemonhaze.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 12,
+    "name": "Ben & Jerry's coconut cake",
+    "price": 0.30,
+    "stock": 100,
+    "image": "images/benjerrys.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 13,
+    "name": "Gelato",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/gelato.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 14,
+    "name": "candy tropical trip",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/tropicaltrip.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 15,
+    "name": "backpack boyz",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/backpackboyz.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 16,
+    "name": "spaceman packz",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/spacemanpackz.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 17,
+    "name": "diamond runtz",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/diamondruntz.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 18,
+    "name": "orange packz",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/orange.png",
+    "badge": "Limited Stock"
+  }, 
+  {
+    "id": 19,
+    "name": "Pink Slushie",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/pinkslushie.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 20,
+    "name": "Cherry Lime Cake ",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/cherrylime.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 21,
+    "name": "znickerz",
+    "price": 0.30,
+    "stock": 100,
+    "image": "images/znickerz.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 22,
+    "name": "killer kiwi",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/killerkiwi.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 23,
+    "name": "jelly pop",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/jellypop.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 24,
+    "name": "Miami Pixy Dust ",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/pixydust.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 25,
+    "name": "sherbato",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/sherbato.png",
+    "badge": "Limited Stock"
+  },  {
+    "id": 26,
+    "name": "Pop Tarts Animal Cookies",
+    "price": 0.30,
+    "stock": 100,
+    "image": "images/poptarts.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 27,
+    "name": "sticky buns ",
+    "price": 0.30,
+    "stock":100,
+    "image": "images/stickybuns.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 28,
+    "name": "Black Cherry",
+    "price": 0.30,
+    "stock": 100,
+    "image": "images/blackcherry.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 29,
+    "name": "Blue Dream",
+    "price": 0.30,
+    "stock": 100,
+    "image": "images/bluedream.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 30,
+    "name": "Hubba Bubba Marshmellow",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/hubbabubba2.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 31,
+    "name": "sorbet raspberry",
+    "price": 0.30,
+    "stock": 100,
+    "image": "images/sorbet.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 32,
+    "name": "Orange V2",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/orangev2.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 33,
+    "name": "Raspberry Cake",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/raspberrycake.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 34,
+    "name": "Candy packz",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/candy.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 35,
+    "name": "deliemon",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/deliemon.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 36,
+    "name": "great white peach",
+    "price": 0.30,
+    "stock": 50,
+    "image": "images/greatwhitepeach.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 37,
+    "name": "banana bubblegum",
+    "price": 0.30,
+    "stock": 50,
+    "image": "bananabubblegum.png",
+    "badge": "Limited Stock"
+  },
+    {
+    "id": 38,
+    "name": "strawberry short crunch",
+    "price": 0.30,
+    "stock": 104,
+    "image": "images/strawberryshortcrunch.png",
+    "badge": "Limited Stock"
+  }
+
+]
