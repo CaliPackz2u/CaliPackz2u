@@ -108,6 +108,7 @@ function displayProducts() {
                     ❤️ Like
 
                 </button>
+                <br/>
 
                 <div class="buy-section">
 
