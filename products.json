@@ -6,9 +6,9 @@
     "stock": 50,
     "image": "images/twix.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
     "category": "In Stock",
-    "rating": 0
+    "rating": 5
   },
   {
     "id": 2,
@@ -17,9 +17,9 @@
     "stock": 50,
     "image": "images/berrybomb.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
-"rating": 0
+"rating": 5
   },
   {
     "id": 3,
@@ -28,9 +28,9 @@
     "stock": 50,
     "image": "images/blackmamba.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 3,
 "category": "In Stock",
-"rating": 0
+"rating": 4.8
   },
     {
     "id": 4,
@@ -39,9 +39,9 @@
     "stock": 50,
     "image": "images/godfather.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 4,
 "category": "In Stock",
-"rating": 0
+"rating": 4.6
   },
     {
     "id": 5,
@@ -50,9 +50,9 @@
     "stock": 50,
     "image": "images/icerocks.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 2,
 "category": "In Stock",
-"rating": 0
+"rating": 2.5
   },
     {
     "id": 6,
@@ -61,9 +61,9 @@
     "stock": 50,
     "image": "images/Trixx.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 6,
 "category": "In Stock",
-"rating": 0
+"rating": 4.4
   },
     {
     "id": 7,
@@ -72,9 +72,9 @@
     "stock": 50,
     "image": "images/knife.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
-"rating": 0
+"rating": 5
   },
     {
     "id": 8,
@@ -83,9 +83,9 @@
     "stock": 50,
     "image": "images/lemoncherryruntz.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
-"rating": 0
+"rating": 5
   },
     {
     "id": 9,
@@ -94,9 +94,9 @@
     "stock": 50,
     "image": "images/bluegushers.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
-"rating": 0
+"rating": 5
   },
     {
     "id": 10,
@@ -105,9 +105,9 @@
     "stock": 50,
     "image": "images/hubbabubba1.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
-"rating": 0
+"rating": 5
   },
     {
     "id": 11,
@@ -116,9 +116,9 @@
     "stock": 50,
     "image": "images/lemonhaze.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 2,
 "category": "In Stock",
-"rating": 0
+"rating": 2.6
   },
     {
     "id": 12,
@@ -127,9 +127,9 @@
     "stock": 100,
     "image": "images/benjerrys.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
-"rating": 0
+"rating": 4.8
   },
     {
     "id": 13,
@@ -138,20 +138,20 @@
     "stock": 50,
     "image": "images/gelato.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 3,
 "category": "In Stock",
-"rating": 0
+"rating": 4.4
   },
-    {
+   {
     "id": 14,
     "name": "candy tropical trip",
     "price": 0.30,
     "stock": 50,
     "image": "images/tropicaltrip.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 4.5
   },
     {
     "id": 15,
@@ -160,9 +160,9 @@
     "stock": 50,
     "image": "images/backpackboyz.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 16,
@@ -171,9 +171,9 @@
     "stock": 50,
     "image": "images/spaceman.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 4,
 "category": "Coming Soon",
-"rating": 0
+"rating": 3.8
   },
     {
     "id": 17,
@@ -182,9 +182,9 @@
     "stock": 50,
     "image": "images/diamondruntz.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 18,
@@ -193,9 +193,9 @@
     "stock": 50,
     "image": "images/orange.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 1,
 "category": "Coming Soon",
-"rating": 0
+"rating": 2.2
   }, 
   {
     "id": 19,
@@ -204,9 +204,9 @@
     "stock": 50,
     "image": "images/pinkslushie.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 20,
@@ -215,9 +215,9 @@
     "stock": 50,
     "image": "images/cherrylimecake.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 4.8
   },
     {
     "id": 21,
@@ -226,9 +226,9 @@
     "stock": 100,
     "image": "images/znickerz.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 22,
@@ -237,9 +237,9 @@
     "stock": 50,
     "image": "images/killerkiwi.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 23,
@@ -248,9 +248,9 @@
     "stock": 50,
     "image": "images/jellypop.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 24,
@@ -259,9 +259,9 @@
     "stock": 50,
     "image": "images/pixydust.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 3,
 "category": "Coming Soon",
-"rating": 0
+"rating": 4
   },
     {
     "id": 25,
@@ -270,9 +270,9 @@
     "stock": 50,
     "image": "images/sherbato.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 4,
 "category": "Coming Soon",
-"rating": 0
+"rating": 4
   },  {
     "id": 26,
     "name": "Pop Tarts Animal Cookies",
@@ -280,9 +280,9 @@
     "stock": 100,
     "image": "images/poptarts.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 4,
 "category": "Coming Soon",
-"rating": 0
+"rating": 4
   },
     {
     "id": 27,
@@ -291,9 +291,9 @@
     "stock":100,
     "image": "images/stickybunz.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 4,
 "category": "Coming Soon",
-"rating": 0
+"rating": 4
   },
     {
     "id": 28,
@@ -302,9 +302,9 @@
     "stock": 100,
     "image": "images/blackcherry.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 4,
 "category": "Coming Soon",
-"rating": 0
+"rating": 4
   },
     {
     "id": 29,
@@ -313,20 +313,20 @@
     "stock": 100,
     "image": "images/bluedream.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 4,
 "category": "Coming Soon",
-"rating": 0
+"rating": 4
   },
     {
     "id": 30,
-    "name": "Hubba Bubba Marshmellow",
+    "name": "Hubba Bubba Marshmallow",
     "price": 0.30,
     "stock": 50,
     "image": "images/hubbabubba2.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 31,
@@ -335,9 +335,9 @@
     "stock": 100,
     "image": "images/sorbet.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 32,
@@ -346,9 +346,9 @@
     "stock": 50,
     "image": "images/orangev2.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 33,
@@ -357,9 +357,9 @@
     "stock": 50,
     "image": "images/raspberrycake.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 34,
@@ -368,9 +368,9 @@
     "stock": 50,
     "image": "images/candy.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 35,
@@ -379,9 +379,9 @@
     "stock": 50,
     "image": "images/deliemon.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 36,
@@ -390,9 +390,9 @@
     "stock": 50,
     "image": "images/greatwhitepeach.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
 "category": "Coming Soon",
-"rating": 0
+"rating": 5
   },
     {
     "id": 37,
@@ -401,9 +401,9 @@
     "stock": 50,
     "image": "bananabubblegum.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 4,
 "category": "Coming Soon",
-"rating": 0
+"rating": 3.8
   },
     {
     "id": 38,
@@ -412,9 +412,8 @@
     "stock": 104,
     "image": "images/strawberryshortcrunch.png",
     "badge": "Coming Soon",
-    "likes": 0,
+    "likes": 5,
     "category": "Coming Soon",
-"rating": 0
-  }
-
+"rating": 5
+    }
 ]
