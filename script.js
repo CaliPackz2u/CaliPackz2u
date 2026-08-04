@@ -257,73 +257,63 @@ function decreaseQuantity(id) {
 // =======================================
 
 function updateCart() {
-  
-  const cartItems = document.getElementById("cart-items");
-  
-  const cartCount = document.getElementById("cart-count");
-  
-  cartItems.innerHTML = "";
-  
-  let totalItems = 0;
-  
-  if (cart.length === 0) {
-    
-    cartItems.innerHTML = `
 
+    const cartItems = document.getElementById("cart-items");
+    const cartCount = document.getElementById("cart-count");
+    const cartTotal = document.getElementById("cart-total");
+
+    cartItems.innerHTML = "";
+
+    let totalItems = 0;
+    let grandTotal = 0;
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML = `
             <p class="empty-cart">
-
                 Your cart is empty.
-
             </p>
-
         `;
-    
-  }
-  
-  cart.forEach(item => {
-    
-    totalItems += item.quantity;
-    
-    cartItems.innerHTML += `
+
+        cartCount.textContent = "0";
+        cartTotal.textContent = "0.00";
+
+        return;
+    }
+
+    cart.forEach(item => {
+
+        const lineTotal = calculatePrice(item.quantity);
+
+        totalItems += item.quantity;
+        grandTotal += lineTotal;
+
+        cartItems.innerHTML += `
 
         <div class="cart-item">
 
             <div class="cart-details">
 
                 <div class="cart-name">
-
                     ${item.name}
-
                 </div>
 
                 <div class="cart-price">
-
-                    £${calculatePrice(item.quantity).toFixed(2)}
-
+                    £${lineTotal.toFixed(2)}
                 </div>
 
             </div>
 
             <div class="quantity-controls">
 
-                <button
-                    onclick="decreaseQuantity(${item.id})">
-
+                <button onclick="decreaseQuantity(${item.id})">
                     -
-
                 </button>
 
-                <span>
+                <span>${item.quantity}</span>
 
-                    ${item.quantity}
-
-                </span>
-
-                <button
-                    onclick="increaseQuantity(${item.id})">
-
+                <button onclick="increaseQuantity(${item.id})">
                     +
-
                 </button>
 
             </div>
@@ -331,13 +321,12 @@ function updateCart() {
         </div>
 
         `;
-    
-  });
-  
-  cartCount.textContent = totalItems;
-  
-  updateTotal();
-  
+
+    });
+
+    cartCount.textContent = totalItems;
+    cartTotal.textContent = grandTotal.toFixed(2);
+
 }
 // =======================================
 // PART 3 - TOTALS & PRICING
@@ -350,15 +339,16 @@ function updateCart() {
 // ---------------------------------------
 
 function calculatePrice(quantity) {
-  
-  const hundreds = Math.floor(quantity / 100);
-  
-  const remainder = quantity % 100;
-  
-  const total = (hundreds * 25) + (remainder * 0.30);
-  
-  return total;
-  
+
+    const bundlePrice = 25;
+    const bundleSize = 100;
+    const unitPrice = 0.30;
+
+    const bundles = Math.floor(quantity / bundleSize);
+    const remaining = quantity % bundleSize;
+
+    return (bundles * bundlePrice) + (remaining * unitPrice);
+
 }
 
 // =======================================
