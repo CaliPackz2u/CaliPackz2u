@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Margin Calculator</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:#1e1e1e;
+    width:380px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+
+h1{
+    color:#ff8800;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+label{
+    color:white;
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#ff8800;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff6600;
+}
+
+.results{
+    margin-top:25px;
+    color:white;
+}
+
+.result{
+    background:#2b2b2b;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.value{
+    color:#00ff88;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Margin Calculator</h1>
+
+<label>Revenue (£)</label>
+<input type="number" id="revenue" placeholder="Enter revenue">
+
+<label>Cost (£)</label>
+<input type="number" id="cost" placeholder="Enter cost">
+
+<button onclick="calculate()">Calculate</button>
+
+<div class="results">
+
+<div class="result">
+<span>Profit</span>
+<span class="value" id="profit">£0.00</span>
+</div>
+
+<div class="result">
+<span>Margin</span>
+<span class="value" id="margin">0%</span>
+</div>
+
+<div class="result">
+<span>Markup</span>
+<span class="value" id="markup">0%</span>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function calculate(){
+
+let revenue = parseFloat(document.getElementById("revenue").value);
+let cost = parseFloat(document.getElementById("cost").value);
+
+if(isNaN(revenue) || isNaN(cost) || revenue<=0){
+
+alert("Please enter valid numbers.");
+
+return;
+
+}
+
+let profit = revenue - cost;
+
+let margin = (profit / revenue) * 100;
+
+let markup = (profit / cost) * 100;
+
+document.getElementById("profit").innerHTML =
+"£" + profit.toFixed(2);
+
+document.getElementById("margin").innerHTML =
+margin.toFixed(2) + "%";
+
+document.getElementById("markup").innerHTML =
+isFinite(markup) ? markup.toFixed(2) + "%" : "N/A";
+
+}
+
+</script>
+
+</body>
+</html>
