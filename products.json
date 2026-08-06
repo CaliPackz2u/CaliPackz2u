@@ -7,7 +7,7 @@
     "image": "images/twix.png",
     "badge": "Limited Stock",
     "likes": 5,
-    "category": "In Stock",
+    "category": "Limited Stock",
     "rating": 5
   },
   {
@@ -148,7 +148,7 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/tropicaltrip.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 6,
 "category": "In Stock",
 "rating": 4
@@ -159,7 +159,7 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/backpackboyz.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 5,
 "category": "In Stock",
 "rating": 5
@@ -170,7 +170,7 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/spaceman.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 4,
 "category": "In Stock",
 "rating": 4
@@ -181,7 +181,7 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/diamondruntz.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 5,
 "category": "In Stock",
 "rating": 5
@@ -192,9 +192,9 @@
     "price": 0.30,
     "stock": 100,
     "image": "images/orange.png",
-    "badge": "In Stock",
+    "badge": "New",
     "likes": 3,
-"category": "In Stock",
+"category": "Limited Stock",
 "rating": 3
   }, 
   {
@@ -203,9 +203,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/pinkslushie.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 5,
-"category": "In Stock",
+"category": "Limited Stock",
 "rating": 5
   },
     {
@@ -216,7 +216,7 @@
     "image": "images/cherrylimecake.png",
     "badge": "In Stock",
     "likes": 5,
-"category": "In Stock",
+"category": "Limited Stock",
 "rating": 5
   },
     {
@@ -225,9 +225,9 @@
     "price": 0.30,
     "stock": 100,
     "image": "images/znickerz.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 5,
-"category": "In Stock",
+"category": "Limited Stock",
 "rating": 5
   },
     {
@@ -236,9 +236,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/killerkiwi.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 5,
-"category": "In Stock",
+"category": "Limited Stock",
 "rating": 5
   },
     {
@@ -247,9 +247,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/jellypop.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 5,
-"category": "In Stock",
+"category": "Limited Stock",
 "rating": 5
   },
     {
@@ -260,7 +260,7 @@
     "image": "images/pixydust.png",
     "badge": "Coming Soon",
     "likes": 5,
-"category": "Coming Soon",
+"category": "Limited Stock",
 "rating": 5
   },
     {
@@ -269,9 +269,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/sherbato.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 5,
-"category": "In Stock",
+"category": "Limited Stock",
 "rating": 5
   },  {
     "id": 26,
