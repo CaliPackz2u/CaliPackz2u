@@ -7,7 +7,7 @@
     "image": "images/twix.png",
     "badge": "Limited Stock",
     "likes": 5,
-    "category": "Limited Stock",
+    "category": "In Stock",
     "rating": 5
   },
   {
@@ -28,7 +28,7 @@
     "stock": 50,
     "image": "images/blackmamba.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 3,
 "category": "In Stock",
 "rating": 3
   },
@@ -39,7 +39,7 @@
     "stock": 50,
     "image": "images/godfather.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 3,
 "category": "In Stock",
 "rating": 3
   },
@@ -50,7 +50,7 @@
     "stock": 50,
     "image": "images/icerocks.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 3,
 "category": "In Stock",
 "rating": 3
   },
@@ -61,7 +61,7 @@
     "stock": 50,
     "image": "images/Trixx.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 4,
 "category": "In Stock",
 "rating": 4
   },
@@ -72,7 +72,7 @@
     "stock": 50,
     "image": "images/knife.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
 "rating": 4
   },
@@ -83,7 +83,7 @@
     "stock": 50,
     "image": "images/lemoncherryruntz.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
 "rating": 5
   },
@@ -94,7 +94,7 @@
     "stock": 50,
     "image": "images/bluegushers.png",
     "badge": "Limited Stock",
-    "likes": 0,
+    "likes": 5,
 "category": "In Stock",
 "rating": 5
   },
@@ -192,9 +192,9 @@
     "price": 0.30,
     "stock": 100,
     "image": "images/orange.png",
-    "badge": "New",
+    "badge": "Limited Stock",
     "likes": 3,
-"category": "Limited Stock",
+"category": "In Stock",
 "rating": 3
   }, 
   {
@@ -205,7 +205,7 @@
     "image": "images/pinkslushie.png",
     "badge": "Limited Stock",
     "likes": 5,
-"category": "Limited Stock",
+"category": "In Stock",
 "rating": 5
   },
     {
@@ -214,9 +214,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/cherrylimecake.png",
-    "badge": "In Stock",
+    "badge": "Limited Stock",
     "likes": 5,
-"category": "Limited Stock",
+"category": "In Stock",
 "rating": 5
   },
     {
@@ -227,7 +227,7 @@
     "image": "images/znickerz.png",
     "badge": "Limited Stock",
     "likes": 5,
-"category": "Limited Stock",
+"category": "In Stock",
 "rating": 5
   },
     {
@@ -238,7 +238,7 @@
     "image": "images/killerkiwi.png",
     "badge": "Limited Stock",
     "likes": 5,
-"category": "Limited Stock",
+"category": "In Stock",
 "rating": 5
   },
     {
@@ -249,7 +249,7 @@
     "image": "images/jellypop.png",
     "badge": "Limited Stock",
     "likes": 5,
-"category": "Limited Stock",
+"category": "In Stock",
 "rating": 5
   },
     {
@@ -260,7 +260,7 @@
     "image": "images/pixydust.png",
     "badge": "Coming Soon",
     "likes": 5,
-"category": "Limited Stock",
+"category": "Coming Soon",
 "rating": 5
   },
     {
@@ -271,7 +271,7 @@
     "image": "images/sherbato.png",
     "badge": "Limited Stock",
     "likes": 5,
-"category": "Limited Stock",
+"category": "In Stock",
 "rating": 5
   },  {
     "id": 26,
@@ -344,7 +344,7 @@
     "id": 33,
     "name": "Raspberry Cake",
     "price": 0.30,
-    "stock": 150,
+    "stock": 50,
     "image": "images/raspberrycake.png",
     "badge": "Coming Soon",
     "likes": 5,

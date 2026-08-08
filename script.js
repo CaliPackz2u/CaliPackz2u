@@ -35,30 +35,81 @@ async function loadProducts() {
 // DISPLAY PRODUCTS
 // =======================================
 
-function displayProducts() {
+function displayProducts(productList = products) {
+  
+  if (!productList || productList.length === 0) {
+    
+    document.getElementById("products").innerHTML =
+      
+      "<p>No products found.</p>";
+    
+    return;
+    
+  }
   
   const container = document.getElementById("products");
   
-  container.innerHTML = "";
-  
-  products.forEach(product => {
-    
-    // Badge HTML
-    let badgeHTML = "";
-    
-    if (product.badge && product.badge !== "") {
+container.innerHTML = "";
+
+productList.forEach(product => {
       
-      const badgeClass = product.badge
-        .toLowerCase()
-        .replace(/\s+/g, "-");
+      // Badge HTML
       
-      badgeHTML =
-        `<div class="badge ${badgeClass}">
-                    ${product.badge}
-                </div>`;
-    }
-    
-    container.innerHTML += `
+      let badgeHTML = "";
+      
+      if (product.badge && product.badge !== "") {
+        
+        const badgeClass = product.badge
+          
+          .toLowerCase()
+          
+          .replace(/\s+/g, "-");
+        
+        badgeHTML = `
+
+            <div class="badge ${badgeClass}">
+
+                ${product.badge}
+
+            </div>
+
+        `;
+        
+      }
+      
+      // Stock Status
+      
+      let stockStatus = "";
+      
+      let stockClass = "";
+      
+      if (product.stock === 0) {
+        
+        stockStatus = "Out of Stock";
+        
+        stockClass = "out-stock";
+        
+      } else if (product.stock <= 25) {
+        
+        stockStatus = "Limited Stock";
+        
+        stockClass = "limited-stock";
+        
+      } else if (product.stock <= 100) {
+        
+        stockStatus = "Running Low";
+        
+        stockClass = "running-low";
+        
+      } else {
+        
+        stockStatus = "In Stock";
+        
+        stockClass = "in-stock";
+        
+      }
+      
+      container.innerHTML += `
 
         <div class="product-card">
 
@@ -72,7 +123,7 @@ function displayProducts() {
             <div class="product-info">
 
                 <h3>${product.name}</h3>
-
+                <p class="category">  ${product.category}</p>
                 <p class="rating">
 
                     ⭐ ${product.rating}/5
@@ -108,7 +159,6 @@ function displayProducts() {
                     ❤️ Like
 
                 </button>
-                <br/>
 
                 <div class="buy-section">
 
@@ -120,12 +170,13 @@ function displayProducts() {
                         value="1"
                     >
 
-                    <button
-                        onclick="addToCart(${product.id})">
+<button
+    onclick="addToCart(${product.id})"
+    ${product.stock === 0 ? "disabled" : ""}>
 
-                        Add To Cart
+    ${product.stock === 0 ? "Out of Stock" : "Add To Cart"}
 
-                    </button>
+</button>
 
                 </div>
                 <br/>
@@ -297,7 +348,11 @@ function updateCart() {
                     ${item.name}
 
                 </div>
+                  <p class="category">
 
+                    ${product.category}
+
+</p>
                 <div class="cart-price">
 
                     £${calculatePrice(item.quantity).toFixed(2)}
@@ -406,6 +461,24 @@ function clearCart() {
   }
   
 }
+//--------------------------------//
+//------ search bar -------------//
+//--------------------------------//
+const searchInput = document.getElementById("search");
+
+searchInput.addEventListener("input", function() {
+  
+  const value = this.value.toLowerCase();
+  
+  const filtered = products.filter(product =>
+    
+    product.name.toLowerCase().includes(value)
+    
+  );
+  
+  displayProducts(filtered);
+  
+});
 
 // =======================================
 // CHECKOUT BUTTON
