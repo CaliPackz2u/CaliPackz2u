@@ -344,7 +344,7 @@
     "id": 33,
     "name": "Raspberry Cake",
     "price": 0.30,
-    "stock": 50,
+    "stock": 150,
     "image": "images/raspberrycake.png",
     "badge": "Awaiting Delivery",
     "likes": 5,
