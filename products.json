@@ -14,7 +14,7 @@
     "id": 2,
     "name": "Berry Bomb",
     "price": 0.30,
-    "stock": 50,
+    "stock": 100,
     "image": "images/berrybomb.png",
     "badge": "Limited Stock",
     "likes": 5,
@@ -102,7 +102,7 @@
     "id": 10,
     "name": "Hubba Bubba sour blueberry",
     "price": 0.30,
-    "stock": 50,
+    "stock": 100,
     "image": "images/hubbabubba1.png",
     "badge": "Limited Stock",
     "likes": 5,
@@ -258,16 +258,16 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/pixydust.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
     "id": 25,
     "name": "sherbato",
     "price": 0.30,
-    "stock": 50,
+    "stock": 100,
     "image": "images/sherbato.png",
     "badge": "Limited Stock",
     "likes": 5,
@@ -279,9 +279,9 @@
     "price": 0.30,
     "stock": 100,
     "image": "images/poptarts.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
@@ -290,9 +290,9 @@
     "price": 0.30,
     "stock":100,
     "image": "images/stickybunz.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
@@ -301,9 +301,9 @@
     "price": 0.30,
     "stock": 100,
     "image": "images/blackcherry.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
@@ -312,9 +312,9 @@
     "price": 0.30,
     "stock": 100,
     "image": "images/bluedream.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
@@ -323,9 +323,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/hubbabubba2.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 0
   },
     {
@@ -334,9 +334,9 @@
     "price": 0.30,
     "stock": 100,
     "image": "images/sorbet.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
 
@@ -346,9 +346,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/raspberrycake.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
@@ -357,9 +357,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/mix.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 4
   },
     {
@@ -368,9 +368,9 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/deliemon.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
@@ -379,32 +379,205 @@
     "price": 0.30,
     "stock": 50,
     "image": "images/mix.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
     "id": 37,
     "name": "banana bubblegum",
     "price": 0.30,
-    "stock": 50,
+    "stock": 100,
     "image": "images/bananabubblegum.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-"category": "Coming Soon",
+"category": "awaiting delivery",
 "rating": 5
   },
     {
     "id": 38,
     "name": "strawberry shortcake crunch",
     "price": 0.30,
-    "stock": 104,
+    "stock": 100,
     "image": "images/strawberryshortcakecrunch.png",
-    "badge": "Coming Soon",
+    "badge": "Awaiting Delivery",
     "likes": 5,
-    "category": "Coming Soon",
+    "category": "awaiting delivery",
 "rating": 5
-  }
-
+  },
+ {
+   "id": 39,
+   "name": "gelato",
+   "price": 0.30,
+   "stock": 50,
+   "image": "images/gelato2.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ },
+  {
+   "id": 40,
+   "name": "Gumbo",
+   "price": 0.30,
+   "stock": 100,
+   "image": "images/gumbo.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 41,
+   "name": "zours Z",
+   "price": 0.30,
+   "stock": 100,
+   "image": "images/zourz.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 42,
+   "name": "passion fruit pop ",
+   "price": 0.30,
+   "stock": 100,
+   "image": "images/passionfruitpop.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 43,
+   "name": "sour berry",
+   "price": 0.30,
+   "stock": 50,
+   "image": "images/sourberry.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 44,
+   "name": "candy surprise ",
+   "price": 0.30,
+   "stock": 150,
+   "image": "images/candysurprise.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 45,
+   "name": "cherry tini ",
+   "price": 0.30,
+   "stock": 50,
+   "image": "images/cherrytini.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 46,
+   "name": "ice cream cake ",
+   "price": 0.30,
+   "stock": 50,
+   "image": "images/icecreamcake.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 47,
+   "name": "reaper",
+   "price": 0.30,
+   "stock": 50,
+   "image": "images/reaper.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 48,
+   "name": "marbella packz",
+   "price": 0.30,
+   "stock": 100,
+   "image": "images/marbella.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 49,
+   "name": "trixx strawberry banana ",
+   "price": 0.30,
+   "stock": 50,
+   "image": "images/strawberrybananatrixx.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 50,
+   "name": "Pink Zugar ",
+   "price": 0.30,
+   "stock": 50,
+   "image": "images/pinkzugar.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 51,
+   "name": "rainbow zoap",
+   "price": 0.30,
+   "stock": 50,
+   "image": "images/rainbowzoap.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 52,
+   "name": "rainbow sherbet",
+   "price": 0.30,
+   "stock": 100,
+   "image": "images/rainbowsherbet.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ },
+  {
+   "id": 53,
+   "name": "candy lemonade ",
+   "price": 0.30,
+   "stock": 100,
+   "image": "images/candylemonade.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ },
+  {
+   "id": 54,
+   "name": "origamiz",
+   "price": 0.30,
+   "stock": 100,
+   "image": "images/origamiz.png",
+   "badge": "Awaiting Delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }, {
+   "id": 55,
+   "name": "San Andreas packz",
+   "price": 0.30,
+   "stock": 100,
+   "image": "images/gangpack.png",
+   "badge": "awaiting delivery",
+   "likes": 5,
+   "category": "awaiting delivery",
+   "rating": 5
+ }
 ]
