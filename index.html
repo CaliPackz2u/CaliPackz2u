@@ -23,10 +23,11 @@
 
         <img src="./images/calipackz2u.png" alt="CaliPackz2U Logo">
 
-        <h1>CaliPackz2u</h1>
+        <h1></h1>
 
     </div>
-
+<div class="rating-grid">
+    <div class="ratingrid-item">
     <div class="search">
 
         <input
@@ -36,14 +37,15 @@
         >
 
     </div>
-
-    <div class="cart-button">
-
-        <i class="fa-solid fa-cart-shopping"></i>
-
-        <span id="cart-count">0</span>
-
     </div>
+    <div class="ratingrid-item">
+<button id="cart-button" class="cart-button">
+    🛒
+    
+    <span id="cart-count">0</span>
+</button>
+</div>
+   
 
 </header>
 
@@ -53,6 +55,50 @@
 
     <section class="hero">
 
+<div class="product-filters">
+
+    <button
+        class="filter-btn active"
+        onclick="filterProducts('all', this)">
+        All
+    </button>
+
+    <button
+        class="filter-btn"
+        onclick="filterProducts('in stock', this)">
+        In Stock
+    </button>
+
+    <button
+        class="filter-btn"
+        onclick="filterProducts('out of stock', this)">
+        Out of Stock
+    </button>
+
+    <button
+        class="filter-btn"
+        onclick="filterProducts('awaiting delivery', this)">
+        Awaiting Delivery
+    </button>
+
+</div>
+ <div class="view-switcher">
+    <button
+        id="large-view"
+        class="view-btn active"
+        onclick="setProductView('large')">
+        ▦
+    </button>
+
+    <button
+        id="compact-view"
+        class="view-btn"
+        onclick="setProductView('compact')">
+        ▦▦
+    </button>
+</div>
+
+
         <h2>Premium Cali Pack Bags</h2>
 
         <p>
@@ -60,6 +106,57 @@
         </p>
 
     </section>
+<!-- CART OVERLAY -->
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<!-- SHOPPING CART -->
+<div id="cart-panel" class="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>🛒 Your Cart</h2>
+
+        <button id="close-cart" class="close-cart">
+            ×
+        </button>
+
+    </div>
+
+    <div id="cart-items" class="cart-items">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total-row">
+
+            <span>Total</span>
+
+            <strong>
+                £<span id="cart-total">0.00</span>
+            </strong>
+
+        </div>
+
+        <button id="checkout-btn" class="checkout-btn">
+            Checkout
+        </button>
+
+        <button
+            onclick="clearCart()"
+            class="clear-cart-btn">
+
+            Clear Cart
+
+        </button>
+
+    </div>
+
+</div>
 
     <!-- =========================
          PRODUCTS
@@ -83,49 +180,6 @@
          SHOPPING CART
     ========================== -->
 
-    <section class="cart">
-
-        <h2>
-
-            <i class="fa-solid fa-cart-shopping"></i>
-
-            Shopping Basket
-
-        </h2>
-
-        <div id="cart-items">
-
-            <p class="empty-cart">
-
-                Your basket is empty.
-
-            </p>
-
-        </div>
-
-        <div class="cart-footer">
-
-            <div class="cart-total">
-
-                <span>Total</span>
-
-                <strong>
-
-                    £<span id="cart-total">0.00</span>
-
-                </strong>
-
-            </div>
-
-            <button id="checkout-btn">
-
-                Add Order 
-
-            </button>
-
-        </div>
-
-    </section>
 
     <!-- =========================
          FOOTER
@@ -135,7 +189,7 @@
 
         <p>
 
-            © 2026 CaliPackz2U
+            © 2026 CaliPackz2u
 
         </p>
 
