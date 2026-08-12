@@ -16,45 +16,284 @@
     <!-- =========================
          NAVBAR
     ========================== -->
+<!-- =======================================
+     NAVBAR
+======================================= -->
 
-<header class="navbar">
+<nav class="navbar">
 
-    <div class="logo">
+    <div class="nav-container">
 
-        <img src="./images/calipackz2u.png" alt="CaliPackz2U Logo">
+        <!-- LOGO -->
+        <a href="#" class="logo">
+         <img src="./images/calipackz2u-t.png" alt="CaliPackz2U Logo">
+        </a>
 
-        <h1></h1>
+
+        <!-- SEARCH -->
+        <div class="nav-search">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search products..."
+            >
+
+            <span>🔍</span>
+
+        </div>
+
+
+        <!-- NAV ACTIONS -->
+        <div class="nav-actions">
+
+            <!-- VIEW SWITCHER -->
+          
+
+
+            <!-- CART -->
+            <button
+                id="cart-button"
+                class="cart-button">
+
+                🛒
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </button>
+
+        </div>
 
     </div>
-<div class="rating-grid">
-    <div class="ratingrid-item">
-    <div class="search">
 
-        <input
-            type="text"
-            id="search"
-            placeholder="Search products..."
-        >
+</nav>
+<!-- =======================================
+     PROMO CAROUSEL
+     ======================================= -->
+
+<section class="promo-carousel">
+
+    <div class="promo-slides">
+
+        <div class="promo-slide active">
+            <img
+                src="images/promo1.png"
+                alt="CaliPackz2U promotion"
+            >
+
+            <div class="promo-content">
+                <h2></h2>
+                <p>Quality products. Bulk prices.</p>
+
+                <button onclick="scrollToProducts()">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+
+
+        <div class="promo-slide">
+            <img
+                src="images/promo2.png"
+                alt="Bulk pricing"
+            >
+
+            <div class="promo-content">
+                <h2>BULK PRICING</h2>
+                <p>Every 100 products = £25.00</p>
+
+                <button onclick="scrollToProducts()">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+
+
+        <div class="promo-slide">
+            <img
+                src="images/promo3.png"
+                alt="CaliPackz2U products"
+            >
+
+            <div class="promo-content">
+                <h2>SHOP NOW</h2>
+                <p>Browse our latest products.</p>
+
+                <button onclick="scrollToProducts()">
+                    View Products
+                </button>
+            </div>
+        </div>
 
     </div>
+
+
+    <!-- Previous / Next -->
+
+    <button
+        class="promo-arrow promo-prev"
+        onclick="changePromoSlide(-1)">
+        ‹
+    </button>
+
+    <button
+        class="promo-arrow promo-next"
+        onclick="changePromoSlide(1)">
+        ›
+    </button>
+
+
+    <!-- Dots -->
+
+    <div class="promo-dots">
+
+        <button
+            class="promo-dot active"
+            onclick="showPromoSlide(0)">
+        </button>
+
+        <button
+            class="promo-dot"
+            onclick="showPromoSlide(1)">
+        </button>
+
+        <button
+            class="promo-dot"
+            onclick="showPromoSlide(2)">
+        </button>
+
     </div>
-    <div class="ratingrid-item">
-<button id="cart-button" class="cart-button">
-    🛒
+<!-- =======================================
+     BULK PRICING
+======================================= -->
+
+<section class="bulk-pricing">
     
-    <span id="cart-count">0</span>
-</button>
-</div>
-   
-
-</header>
+    <div class="bulk-header">
+        
+        <span class="bulk-icon">
+            📊
+        </span>
+        
+        <div>
+            
+            <h2>
+                Bulk Pricing
+            </h2>
+            
+            <p>
+                Mix and match products to reach your
+                quantity discount.
+            </p>
+            
+        </div>
+        
+    </div>
+    
+    
+    <div class="bulk-table">
+        
+        <div class="bulk-row bulk-heading">
+            
+            <span>
+                Quantity
+            </span>
+            
+            <span>
+                Price
+            </span>
+            
+        </div>
+        
+        
+        <div class="bulk-row">
+            
+            <span>
+                1 – 49
+            </span>
+            
+            <strong>
+                £0.30 each
+            </strong>
+            
+        </div>
+        
+        
+        <div class="bulk-row">
+            
+            <span>
+                50 – 99
+            </span>
+            
+            <strong>
+                £0.30 each
+            </strong>
+            
+        </div>
+        
+        
+        <div class="bulk-row highlight">
+            
+            <span>
+                100
+            </span>
+            
+            <strong>
+                £25.00
+            </strong>
+            
+        </div>
+        
+        
+        <div class="bulk-row highlight">
+            
+            <span>
+                200
+            </span>
+            
+            <strong>
+                £50.00
+            </strong>
+            
+        </div>
+        
+        
+        <div class="bulk-row highlight">
+            
+            <span>
+                300
+            </span>
+            
+            <strong>
+                £75.00
+            </strong>
+            
+        </div>
+        
+        
+    </div>
+    
+    
+    <p class="bulk-note">
+        🔥 Every full 100 items = £25.00
+        <br>
+        Mix different products to reach 100.
+    </p>
+    
+</section>
+</section>
 
     <!-- =========================
          HERO
     ========================== -->
 
     <section class="hero">
-
+        
+<!-- =======================================
+     PRODUCT CONTROLS
+======================================= -->
 <div class="product-filters">
 
     <button
@@ -81,6 +320,43 @@
         Awaiting Delivery
     </button>
 
+</div>
+
+
+
+    
+    <div class="sort-control">
+        
+        <label for="sort-products">
+            Sort
+        </label>
+        
+        <select id="sort-products">
+        
+            <option value="featured">
+                Featured
+            </option>
+            
+            <option value="price-low">
+                Price: Low → High
+            </option>
+            
+            <option value="price-high">
+                Price: High → Low
+            </option>
+            
+            <option value="likes">
+                Most Liked
+            </option>
+            
+            <option value="name">
+                A → Z
+            </option>
+            
+        </select>
+        
+    </div>
+    
 </div>
  <div class="view-switcher">
     <button
@@ -131,7 +407,7 @@
     </div>
 
     <div class="cart-footer">
-
+<div id="bulk-message"></div>
         <div class="cart-total-row">
 
             <span>Total</span>
@@ -185,15 +461,73 @@
          FOOTER
     ========================== -->
 
-    <footer>
+    <!-- =======================================
+     FOOTER
+======================================= -->
 
+<footer class="site-footer">
+    
+    <div class="footer-container">
+        
+        <div class="footer-brand">
+            
+        <a href="#" class="footer-logo">
+    <img src="./images/calipackz2u-t.png" alt="CaliPackz2U Logo">
+</a>
+      
+            
+            <p>
+                Quality products. Simple bulk pricing.
+            </p>
+            
+        </div>
+        
+        
+        <div class="footer-column">
+            
+            <h3>Shop</h3>
+            
+            <a href="#products">
+                Products
+            </a>
+            
+            <a href="#products">
+                Categories
+            </a>
+            
+        </div>
+        
+        
+        <div class="footer-column">
+            
+            <h3>Information</h3>
+            
+            <a href="#">
+                About Us
+            </a>
+            
+            <a href="#">
+                FAQs
+            </a>
+            
+            <a href="#">
+                Contact
+            </a>
+            
+        </div>
+        
+    </div>
+    
+    
+    <div class="footer-bottom">
+        
         <p>
-
-            © 2026 CaliPackz2u
-
+            © 2026 CaliPackz2u. All rights reserved.
         </p>
-
-    </footer>
+        
+    </div>
+    
+</footer>
 
     <script src="script.js"></script>
 
