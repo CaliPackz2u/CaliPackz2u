@@ -286,9 +286,14 @@ function displayProducts(productList = products) {
         <div class="product-image-wrapper">
 
             <img
-                src="${product.image || ""}"
-                alt="${product.name || "Product"}"
-            >
+    src="${product.image || ""}"
+    alt="${product.name || "Product"}"
+    class="product-image"
+    onclick="openImagePopup(
+        '${product.image || ""}',
+        '${product.name || "Product"}'
+    )"
+>
 
         </div>
 
@@ -318,9 +323,8 @@ function displayProducts(productList = products) {
             <div class="product-meta">
 
                 <span class="category">
-                    ${product.category || "Uncategorised"}
+                   <!-- ${product.category || "Uncategorised"} -->
                 </span>
-
                 <span class="stock-status ${stockClass}">
                     ${stockStatus}
                 </span>
@@ -654,35 +658,111 @@ function decreaseQuantity(id) {
 
     updateCart();
 }
-
-
-// =======================================
-// BULK PRICING
-// Every 100 = £25
-// =======================================
-
+/* calculate price for bundle */
 function calculatePrice(quantity) {
-
+    
     quantity =
         Number(quantity) || 0;
-
-
+    
     const bundles =
         Math.floor(quantity / 100);
-
-
+    
     const remaining =
         quantity % 100;
-
-
+    
     return (
         bundles * 25
     ) + (
         remaining * 0.30
     );
+    
+}
+// =======================================
+// CALCULATE TOTAL CART PRICE
+// Every 100 items across the WHOLE cart
+// = £25.00
+// Remaining items = £0.30 each
+// =======================================
+
+function calculateCartTotal() {
+    
+    let totalItems = 0;
+    
+    // Count every product in the cart
+    cart.forEach(item => {
+        
+        totalItems += Number(item.quantity) || 0;
+        
+    });
+    
+    
+    const bundles =
+        Math.floor(totalItems / 100);
+    
+    const remaining =
+        totalItems % 100;
+    
+    
+    return (
+        bundles * 25
+    ) + (
+        remaining * 0.30
+    );
+    
 }
 
+// =======================================
+// SAVE CART
+// =======================================
 
+function saveCart() {
+    
+    localStorage.setItem(
+        "calipackz2u-cart",
+        JSON.stringify(cart)
+    );
+    
+}
+// =======================================
+// LOAD SAVED CART
+// =======================================
+
+function loadSavedCart() {
+    
+    const savedCart =
+        localStorage.getItem(
+            "calipackz2u-cart"
+        );
+    
+    if (!savedCart) {
+        cart = [];
+        return;
+    }
+    
+    try {
+        
+        cart = JSON.parse(savedCart);
+        
+        if (!Array.isArray(cart)) {
+            cart = [];
+        }
+        
+    } catch (error) {
+        
+        console.error(
+            "Failed to load saved cart:",
+            error
+        );
+        
+        cart = [];
+        
+    }
+    
+}
+
+// =======================================
+// UPDATE CART
+// =======================================
 // =======================================
 // UPDATE CART
 // =======================================
@@ -698,22 +778,19 @@ function updateCart() {
     const cartTotal =
         document.getElementById("cart-total");
     
+    
     if (!cartItems) {
-        console.error("Cart items element not found.");
+        
+        console.error(
+            "Cart items element not found."
+        );
+        
         return;
+        
     }
     
+    
     cartItems.innerHTML = "";
-    
-    let totalItems = 0;
-    
-    // =======================================
-    // CALCULATE TOTAL QUANTITY
-    // =======================================
-    
-    cart.forEach(item => {
-        totalItems += Number(item.quantity) || 0;
-    });
     
     
     // =======================================
@@ -728,16 +805,39 @@ function updateCart() {
             </p>
         `;
         
+        
         if (cartCount) {
             cartCount.textContent = "0";
         }
+        
         
         if (cartTotal) {
             cartTotal.textContent = "0.00";
         }
         
+        
+        saveCart();
+        
         return;
+        
     }
+    
+    
+    // =======================================
+    // TOTAL QUANTITY
+    // =======================================
+    
+    let totalItems = 0;
+    
+    
+    cart.forEach(item => {
+        
+        item.quantity =
+            Number(item.quantity) || 1;
+        
+        totalItems += item.quantity;
+        
+    });
     
     
     // =======================================
@@ -746,94 +846,172 @@ function updateCart() {
     
     cart.forEach(item => {
         
-        const quantity =
-            Number(item.quantity) || 0;
-        
         cartItems.innerHTML += `
 
             <div class="cart-item">
-            <div class="basket-grid">
-            <div class="basket-item">
 
                 <img
-                    class="cart-product-image"
-                    src="${item.image}"
-                    alt="${item.name}"
+                    class="cart-item-image"
+                    src="${item.image || ""}"
+                    alt="${item.name || "Product"}"
                 >
-</div>
-<div class="basket-item">
+
+
                 <div class="cart-details">
 
                     <div class="cart-name">
                         ${item.name}
                     </div>
-</div>
-<div class="basket-item">
-                    <div class="cart-quantity">
-                        Quantity: ${quantity}
+
+
+                    <div class="cart-price">
+
+                        ${item.quantity} items
+
                     </div>
-</div>
-                </div>
-<div class="basket-item">
-                <div class="quantity-controls">
+
+
+                    <div class="cart-quantity">
+
+                        <button
+                            onclick="decreaseQuantity(${item.id})">
+
+                            −
+
+                        </button>
+
+
+                        <input
+                            type="number"
+                            min="1"
+                            max="${item.stock}"
+                            value="${item.quantity}"
+                            onchange="
+                                changeCartQuantity(
+                                    ${item.id},
+                                    this.value
+                                )
+                            "
+                        >
+
+
+                        <button
+                            onclick="increaseQuantity(${item.id})">
+
+                            +
+
+                        </button>
+
+                    </div>
+
 
                     <button
-                        onclick="decreaseQuantity(${item.id})">
-                        −
-                    </button>
+                        class="remove-cart-item"
+                        onclick="removeFromCart(${item.id})">
 
-                    <span>
-                        ${quantity}
-                    </span>
+                        🗑 Remove
 
-                    <button
-                        onclick="increaseQuantity(${item.id})">
-                        +
                     </button>
 
                 </div>
-</div>
-</div>
+
             </div>
 
         `;
+        
     });
     
     
     // =======================================
-    // COMBINED BULK PRICE
+    // CALCULATE WHOLE CART PRICE
     // =======================================
     
     const totalPrice =
-        calculatePrice(totalItems);
+        calculateCartTotal();
     
     
     // =======================================
-    // UPDATE CART
+    // UPDATE CART COUNT
     // =======================================
     
     if (cartCount) {
-        cartCount.textContent = totalItems;
+        
+        cartCount.textContent =
+            totalItems;
+        
     }
+    
+    
+    // =======================================
+    // UPDATE CART TOTAL
+    // =======================================
     
     if (cartTotal) {
+        
         cartTotal.textContent =
             totalPrice.toFixed(2);
+        
     }
-
-const bulkMessage =
-    document.getElementById("bulk-message");
-
-if (bulkMessage) {
     
-    bulkMessage.innerHTML =
-        getBulkDealMessage(totalItems);
+    
+    // =======================================
+    // SAVE CART
+    // =======================================
+    
+    saveCart();
     
 }
+
+
+/*Change cart quantity*/
+
+function changeCartQuantity(id, value) {
+    
+    const item =
+        cart.find(item => item.id === id);
+    
+    if (!item) return;
+    
+    let quantity =
+        parseInt(value, 10);
+    
+    // Invalid number
+    if (isNaN(quantity)) {
+        quantity = 1;
+    }
+    
+    // Minimum
+    if (quantity < 1) {
+        quantity = 1;
+    }
+    
+    // Maximum stock
+    if (quantity > item.stock) {
+        quantity = item.stock;
+    }
+    
+    item.quantity = quantity;
+    
+    updateCart();
 }
 // =======================================
 // CLEAR CART
 // =======================================
+
+function removeFromCart(id) {
+    
+    const item =
+        cart.find(item => item.id === id);
+    
+    if (!item) return;
+    
+    cart = cart.filter(
+        item => item.id !== id
+    );
+    
+    updateCart();
+    
+}
 
 function clearCart() {
 
@@ -1234,8 +1412,69 @@ function setupSorting() {
         
     });
 }
+// =======================================
+// PRODUCT IMAGE POPUP
+// =======================================
+
+function openImagePopup(image, name) {
+    
+    const popup =
+        document.getElementById("image-popup");
+    
+    const popupImage =
+        document.getElementById("popup-image");
+    
+    const popupName =
+        document.getElementById("popup-name");
+    
+    
+    if (!popup || !popupImage) {
+        return;
+    }
+    
+    
+    popupImage.src = image;
+    
+    popupImage.alt = name;
+    
+    
+    if (popupName) {
+        popupName.textContent = name;
+    }
+    
+    
+    popup.classList.add("show");
+    
+    
+    // Prevent background scrolling
+    document.body.classList.add(
+        "popup-open"
+    );
+}
 
 
+// =======================================
+// CLOSE IMAGE POPUP
+// =======================================
+
+function closeImagePopup() {
+    
+    const popup =
+        document.getElementById("image-popup");
+    
+    if (!popup) {
+        return;
+    }
+    
+    
+    popup.classList.remove("show");
+    
+    
+    document.body.classList.remove(
+        "popup-open"
+    );
+    
+}
 // =======================================
 // START APPLICATION
 // =======================================

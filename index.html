@@ -528,7 +528,40 @@
     </div>
     
 </footer>
+<!-- =======================================
+     PRODUCT IMAGE POPUP
+======================================= -->
 
+<div
+    id="image-popup"
+    class="image-popup"
+    onclick="closeImagePopup()"
+>
+
+    <div
+        class="image-popup-content"
+        onclick="event.stopPropagation()"
+    >
+
+        <button
+            class="image-popup-close"
+            onclick="closeImagePopup()">
+
+            ×
+
+        </button>
+
+        <img
+            id="popup-image"
+            src=""
+            alt=""
+        >
+
+        <h3 id="popup-name"></h3>
+
+    </div>
+
+</div>
     <script src="script.js"></script>
 
 </body>
